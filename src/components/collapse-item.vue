@@ -7,7 +7,7 @@
       </slot>
     </div>
     <vm-collapse-transition>
-      <div class="vm-collapse-item__wrap" @click="handleClick('content')" v-show="isActive">
+      <div class="vm-collapse-item__wrap" v-show="isActive">
         <div class="vm-collapse-item__content">
           <slot></slot>
         </div>

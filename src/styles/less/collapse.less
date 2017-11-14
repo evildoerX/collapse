@@ -3,18 +3,22 @@
 .@{collapse-css-prefix-cls} {
   border-radius: @collapse-border-radius;
   &--bordered {
-	border: 1px solid @collaspe-border-color;
+	// border: 1px solid @collaspe-border-color;
   }
   &-item {
+		margin: 10px 0;
 	&__header {
 	  height: @collapse-header-height;
-	  padding-left: 15px;
+	  padding: 0 15px;
 	  font-size: @collapse-header-size;
 	  line-height: @collapse-header-height;
 	  color: @collapse-header-color;
 	  background-color: @collapse-header-fill;
-	  border-bottom: 1px solid @collapse-border-color;
-	  cursor: pointer;
+	  border: 1px solid @collapse-border-color;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 	  &__arrow {
 		transition: transform .3s, top .3s;
@@ -22,7 +26,9 @@
 	}
 	&__wrap {
 	  will-change: height;
-	  background-color: @collapse-content-fill;
+		background-color: @collapse-content-fill;
+		border-right: 1px solid @collapse-border-color;
+		border-left: 1px solid @collapse-border-color;
 	  border-bottom: 1px solid @collapse-border-color;
 	  overflow: hidden;
 	  box-sizing: border-box;

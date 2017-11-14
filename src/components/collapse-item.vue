@@ -2,8 +2,8 @@
   <div class="vm-collapse-item" :class="{'is-active': isActive}">
     <div class="vm-collapse-item__header" @click="handleClick('header')" v-show="!transform || transform&&!isActive">
       <slot name="header">
-        <i class="vm-collapse-item__header__arrow vm-collapse-icon--arrow-right"></i>
         <slot name="title">{{title}}</slot>
+        <i class="vm-collapse-item__header__arrow vm-collapse-icon--arrow-right"></i>
       </slot>
     </div>
     <vm-collapse-transition>
